@@ -4,7 +4,7 @@ const booksRoute = require('./routes/books');
 const winston = require('winston');
 
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 // middlewares
 app.use(express.json());
